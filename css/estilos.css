@@ -1,0 +1,479 @@
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i,700,700i');
+/*Estilos generales*/
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+label {
+    color:#000000!important;
+}
+
+.color-black {
+    color:#000000!important;
+}
+
+.bg-grey {
+    background: #e4e4e4 !important;
+}
+
+.svg-titulo {
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    z-index: -10000;
+    margin-top: -150px;
+    top: 50px;
+}
+
+.logo-antv{
+    width: 160px;
+    margin: 0px -10px 0px 35px;
+}
+
+.spinner-antv {
+    border-color: #cc2259 !important;
+}
+
+.color-antv-1 {
+    background-color: #cc2259 !important;
+}
+
+.color-antv-2 {
+    background-color: #2b91d1 !important;
+}
+
+.color-antv-3 {
+    background-color: #4fc7e1 !important;
+}
+
+.color-antv-4 {
+    background-color: #ed9100 !important;
+}
+
+.color-antv-5 {
+    background-color: #efd51c !important;
+}
+
+.copyright {
+    color: #808080;
+    margin: 0;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+.form-antv input[type=text]:not(.browser-default):focus:not([readonly]) {
+    border-bottom:1px solid #cc2259 !important;
+    box-shadow: 0 1px 0 0 #cc2259 !important;
+}
+
+.form-antv input[type=text]:not(.browser-default):focus:not([readonly])+label {
+    color: #cc2259 !important;
+}
+
+.form-antv input[type=password]:not(.browser-default):focus:not([readonly]) {
+    border-bottom:1px solid #cc2259 !important;
+    box-shadow: 0 1px 0 0 #cc2259 !important;
+}
+
+.form-antv input[type=password]:not(.browser-default):focus:not([readonly])+label {
+    color: #cc2259 !important;
+}
+
+.input-field .prefix.active {
+    color: #cc2259 !important;
+}
+
+input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):focus:not([readonly]), input[type=password]:not(.browser-default):focus:not([readonly]), input[type=email]:not(.browser-default):focus:not([readonly]), input[type=url]:not(.browser-default):focus:not([readonly]), input[type=time]:not(.browser-default):focus:not([readonly]), input[type=date]:not(.browser-default):focus:not([readonly]), input[type=datetime]:not(.browser-default):focus:not([readonly]), input[type=datetime-local]:not(.browser-default):focus:not([readonly]), input[type=tel]:not(.browser-default):focus:not([readonly]), input[type=number]:not(.browser-default):focus:not([readonly]), input[type=search]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]){
+    border-bottom: 1px solid #cc2259 !important;
+    -webkit-box-shadow: 0 1px 0 0 #cc2259 !important;
+    box-shadow: 0 1px 0 0 #cc2259 !important;
+}
+
+.boton-antv {
+    position: absolute;
+    margin-bottom: -55px;
+}
+
+.section-btn {
+    width: 300px;
+}
+
+.btn-gp {
+    top: 0px;
+    position: relative!important;
+    float: right;
+}
+
+.btn-gp li {
+    margin: 0px 5px 0 0!important;
+}
+
+.mini-btn {
+    width:150px!important;
+}
+
+.mini-btn li {
+    margin: 0!important;
+}
+
+.foto-modu {
+    width: 200px;
+    position: relative;
+    top: -55px;
+    right: -100px;
+    margin-bottom: -20px;
+    -ms-transform: rotate(8deg);
+    -webkit-transform: rotate(8deg);
+    transform: rotate(8deg);
+    border: 7px solid #ffffff;
+}
+
+.foto {
+    width: 200px;
+    position: relative;
+    top: -5px;
+    right: -10px;
+    margin-bottom: -20px;
+    -ms-transform: rotate(8deg);
+    -webkit-transform: rotate(8deg);
+    transform: rotate(8deg);
+    border: 7px solid #ffffff;
+}
+
+.foto-show {
+    display: none;
+}
+
+.foto-none {
+    display: none;
+}
+
+.video {
+    
+}
+
+thead th {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+tbody td {
+    text-transform: capitalize;
+}
+
+.brand-logo {
+    margin-left: 30px;
+}
+
+/*ESTILOS DE LA TABLA*/
+
+.margin-table {
+    width: 90% !important;
+} 
+
+.caret {
+    margin: 0!important;
+}
+
+#Jtabla_length {
+    margin: 32px 40px 0px;
+}
+
+#Jtabla_length label {
+    font-size: 15px;
+    display: flex;
+}
+
+#Jtabla_length input {
+    height: 20px;
+    width: 40px;
+    padding: 0 4px;
+    text-align: center; 
+}
+
+#Jtabla_filter {
+    margin: 32px 50px 0px;
+    width: 25%;
+}
+
+#Jtabla_filter label {
+    font-size: 20px;
+    display: flex;
+}
+
+#Jtabla_filter input {
+    height: 35px;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+    color: #fff !important;
+    border: 1px solid transparent; !important;
+    background: #cc2259 !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    color: #fff !important;
+    border: 1px solid transparent; !important;
+    background: #cc2259 !important;
+    transition: all 0.5s ease-out;
+}
+
+.preloader-background {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #eee;
+	
+	position: fixed;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;	
+    z-index: 10000000;
+}
+
+.dropdown-content li>a, .dropdown-content li>span {
+    background: #cc2259!important;
+    color: #ffffff!important;
+}
+
+.dropdown-content li>a, .dropdown-content li>span:hover {
+    background: rgba(204, 34, 89, 0.8)!important;
+
+}
+
+nav ul li.active {
+    background-color: #cc2259 !important;
+}
+
+nav ul a:hover {
+}
+
+.none {
+    display: none;
+}
+
+.margin-table td {
+    padding: 10px 18px !important;
+}
+
+.brand-logo {
+    padding-left: 15px !important;
+}
+
+.btn-conf {
+    margin: 0 auto;
+    display: block;
+    width: 290px;
+}
+
+.cedula-table {
+    width: 90px;
+}
+
+#animacion-rectangulo {
+    -webkit-animation-name: Floating ;
+    -o-animation-name: Floating ;
+    animation-name: Floating ;
+    -webkit-animation-duration: 40s ;
+    -o-animation-duration: 40s ;
+    animation-duration: 40s ;
+    -webkit-animation-iteration-count: infinite ;
+    -o-animation-iteration-count: infinite ;
+    animation-iteration-count: infinite ;
+    -webkit-animation-timing-function: ease-in-out ;
+    -o-animation-timing-function: ease-in-out ;
+    animation-timing-function: ease-in-out ;
+}
+
+@-webkit-keyframes Floating {
+    from {
+        -webkit-transform: translate(0, 0px);
+      }
+      35% {
+        -webkit-transform: translate(-20px, 25px);
+      }
+      to {
+        -webkit-transform: translate(0, 0px);
+      }
+}
+
+#animacion-rectangulo-2 {
+    -webkit-animation-name: Floating2 ;
+    -o-animation-name: Floating2 ;
+    animation-name: Floating2 ;
+    -webkit-animation-duration: 20s ;
+    -o-animation-duration: 20s ;
+    animation-duration: 20s ;
+    -webkit-animation-iteration-count: infinite ;
+    -o-animation-iteration-count: infinite ;
+    animation-iteration-count: infinite ;
+    -webkit-animation-timing-function: ease-in-out ;
+    -o-animation-timing-function: ease-in-out ;
+    animation-timing-function: ease-in-out ;
+}
+
+@-webkit-keyframes Floating2 {
+    from {
+        -webkit-transform: translate(0, 0px);
+      }
+      40% {
+        -webkit-transform: translate(25px, -20px);
+      }
+      to {
+        -webkit-transform: translate(0, 0px);
+      }
+}
+
+#animacion-rectangulo-3 {
+    -webkit-animation-name: Floating3 ;
+    -o-animation-name: Floating3 ;
+    animation-name: Floating3 ;
+    -webkit-animation-duration: 40s ;
+    -o-animation-duration: 40s ;
+    animation-duration: 40s ;
+    -webkit-animation-iteration-count: infinite ;
+    -o-animation-iteration-count: infinite ;
+    animation-iteration-count: infinite ;
+    -webkit-animation-timing-function: ease-in-out ;
+    -o-animation-timing-function: ease-in-out ;
+    animation-timing-function: ease-in-out ;
+}
+
+@-webkit-keyframes Floating3 {
+    from {
+        -webkit-transform: translate(0, 0px);
+      }
+      50% {
+        -webkit-transform: translate(-40px, 15px);
+      }
+      to {
+        -webkit-transform: translate(0, 0px);
+      }
+}
+
+#animacion-rectangulo-4 {
+    -webkit-animation-name: Floating4 ;
+    -o-animation-name: Floating4 ;
+    animation-name: Floating4 ;
+    -webkit-animation-duration: 40s ;
+    -o-animation-duration: 40s ;
+    animation-duration: 40s ;
+    -webkit-animation-iteration-count: infinite ;
+    -o-animation-iteration-count: infinite ;
+    animation-iteration-count: infinite ;
+    -webkit-animation-timing-function: ease-in-out ;
+    -o-animation-timing-function: ease-in-out ;
+    animation-timing-function: ease-in-out ;
+}
+
+@-webkit-keyframes Floating4 {
+    from {
+        -webkit-transform: translate(0, 0px);
+      }
+      70% {
+        -webkit-transform: translate(-40px, 20px);
+      }
+      to {
+        -webkit-transform: translate(0, 0px);
+      }
+}
+
+#animacion-rectangulo-5 {
+    -webkit-animation-name: Floating5 ;
+    -o-animation-name: Floating5 ;
+    animation-name: Floating5 ;
+    -webkit-animation-duration: 40s ;
+    -o-animation-duration: 40s ;
+    animation-duration: 40s ;
+    -webkit-animation-iteration-count: infinite ;
+    -o-animation-iteration-count: infinite ;
+    animation-iteration-count: infinite ;
+    -webkit-animation-timing-function: ease-in-out ;
+    -o-animation-timing-function: ease-in-out ;
+    animation-timing-function: ease-in-out ;
+}
+
+@-webkit-keyframes Floating5 {
+    from {
+        -webkit-transform: translate(0, 0px);
+      }
+      40% {
+        -webkit-transform: translate(10px, -40px);
+      }
+      to {
+        -webkit-transform: translate(0, 0px);
+      }
+}
+
+#animacion-rectangulo-6 {
+    -webkit-animation-name: Floating6 ;
+    -o-animation-name: Floating6 ;
+    animation-name: Floating6 ;
+    -webkit-animation-duration: 20s ;
+    -o-animation-duration: 20s ;
+    animation-duration: 20s ;
+    -webkit-animation-iteration-count: infinite ;
+    -o-animation-iteration-count: infinite ;
+    animation-iteration-count: infinite ;
+    -webkit-animation-timing-function: ease-in-out ;
+    -o-animation-timing-function: ease-in-out ;
+    animation-timing-function: ease-in-out ;
+}
+
+@-webkit-keyframes Floating6 {
+    from {
+        -webkit-transform: translate(0, 0px);
+      }
+      40% {
+        -webkit-transform: translate(25px, -20px);
+      }
+      to {
+        -webkit-transform: translate(0, 0px);
+      }
+}
+
+#animacion-rectangulo-7 {
+    -webkit-animation-name: Floating7 ;
+    -o-animation-name: Floating7 ;
+    animation-name: Floating7 ;
+    -webkit-animation-duration: 60s ;
+    -o-animation-duration: 60s ;
+    animation-duration: 60s ;
+    -webkit-animation-iteration-count: infinite ;
+    -o-animation-iteration-count: infinite ;
+    animation-iteration-count: infinite ;
+    -webkit-animation-timing-function: ease-in-out ;
+    -o-animation-timing-function: ease-in-out ;
+    animation-timing-function: ease-in-out ;
+}
+
+@-webkit-keyframes Floating7 {
+    from {
+        -webkit-transform: translate(0, 0px);
+      }
+      40% {
+        -webkit-transform: translate(25px, -20px);
+      }
+      to {
+        -webkit-transform: translate(0, 0px);
+      }
+}
+
+/*Pickadate*/
+
+.picker--opened .picker__holder {
+    height: 1200px;
+}
+
+.picker__date-display {
+    background-color: #cc2259 !important;
+}
+
+.picker__day--selected, .picker__day--selected:hover, .picker--focused .picker__day--selected {
+    background-color: #cc2259 !important;
+}
