@@ -67,7 +67,7 @@ include('navegacion.php');
             <div class="row">
                 <nav>
                     <div class="color-antv-4 nav-wrapper">
-                        <a href="#" class="brand-logo">Listado de Visistas</a>
+                        <a href="#" class="brand-logo">Listado de Visistas y algo mas</a>
                             <div class="boton-antv fixed-action-btn horizontal ">
                                 <a class="color-antv-2 btn-floating btn-large red">
                                     <i class="large material-icons">mode_edit</i>
