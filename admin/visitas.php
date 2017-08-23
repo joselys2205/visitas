@@ -67,7 +67,7 @@ include('navegacion.php');
             <div class="row">
                 <nav>
                     <div class="color-antv-4 nav-wrapper">
-                        <a href="#" class="brand-logo">Listado de Visistas y algo mas</a>
+                        <a href="#" class="brand-logo">Listado de Visistas</a>
                             <div class="boton-antv fixed-action-btn horizontal ">
                                 <a class="color-antv-2 btn-floating btn-large red">
                                     <i class="large material-icons">mode_edit</i>
@@ -86,7 +86,7 @@ include('navegacion.php');
                 <div class="color-antv-1 nav-wrapper">
                     <a class="brand-logo"><i class="material-icons">search</i>Añadir Visitas</a>
                     <video class="foto right z-depth-5" id="target-1"></video>
-                    <img class="foto-show foto right z-depth-5" id="target-2" src="../../../assets/modules/control_visitas/images/default-pic.png"/>
+                    <img class="foto-show foto right z-depth-5" id="target-2" src="../fotos-visitantes/default-pic.png"/>
 				    <canvas class="foto-none foto right z-depth-5" id="canvas"></canvas>
                 </div>
             </nav>
@@ -103,11 +103,16 @@ include('navegacion.php');
                                 <a class="color-antv-1 waves-effect waves-light btn" id="borrar-foto">Borrar</a>
                             </div>
                         </div>
+                    <input type="text" name="foto1" id="target-hidden" >
+                   
+                        
+                        
                         <div class="input-field col s6">
                             <input type="number" name="cedula" id="first_name" class="validate" data-length="10">
                             <label for="textfield">Cedula</label>
                         </div>
                     </div>
+                    
                     <div class="row">
                         <div class="input-field col s6">
                             <input type="text" name="nombre" id="first_name" class="validate" required pattern="[^0-9!$%&/()=?¿*@]{1,20}$" title="No Admite caracteres especiales ni números.">
@@ -239,7 +244,7 @@ include('navegacion.php');
                 <nav>
                     <div class="color-antv-1 nav-wrapper">
                         <a class="brand-logo">Ver Personal</a>
-                        <img class="foto right z-depth-5" src="../img/<?php echo $consulta['foto'];?>">
+                        <img class="foto right z-depth-5" src="../fotos-visitantes/<?php echo $consulta['foto'];?>">
                     </div>
                 </nav>
                 <div class="row">
@@ -593,7 +598,22 @@ echo "<script language='javascript'>window.location='visitas.php'</script>";
                     $descripcion=$_POST['descripcion'];
                     $foto1=$_POST['foto1'];
                    
+        //  VARIABLE PARA CONTENER LA INFORMACION DE LA IMAGEN
+        $Base64Img = $foto1;
+        //  NOMBRE DE LA IMAGEN (CEDULA DEL VISITANTE)
+        $nombreImagen = $cedula;
 
+        list(, $Base64Img) = explode(';', $Base64Img);
+        list(, $Base64Img) = explode(',', $Base64Img);
+
+        // DECODIFICACION BASE64
+        $Base64Img = base64_decode($Base64Img);
+
+        //CREACION/ACTUALIZACION DEL ARCHIVO
+        file_put_contents('../fotos-visitantes/'.$nombreImagen.'.png', $Base64Img);
+
+        // RUTA A GUARDAR EN LA BASE DE DATOS
+        $foto1 = $nombreImagen.'.png';
 
 
 
